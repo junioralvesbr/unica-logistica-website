@@ -24,6 +24,27 @@ body {
     @apply bg-gradient-to-r from-primary to-third
 }
 
+.webkit-gradient-text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bg-service {
+    position: relative;
+    z-index: 1;
+    background-image: url('./images/bg-services.jpeg');
+    background-size: auto;
+    height: 100vh;
+}
+
+.bg-service::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 * {
     scrollbar-width: thin;
     scrollbar-color: #993349 #DFE9EB;
