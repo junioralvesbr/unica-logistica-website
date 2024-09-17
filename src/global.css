@@ -15,6 +15,43 @@ html,
 body {
     font-family: 'Comfortaa', "Roboto", sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
     overflow-wrap: break-word;
     letter-spacing: -0.047rem;
+}
+
+.unica-gradiente {
+    @apply bg-gradient-to-r from-primary to-third
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #993349 #DFE9EB;
+}
+
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: #B8C0C2;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #993349;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #993349;
 }
