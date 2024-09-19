@@ -630,6 +630,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.ml-12 {
+  margin-left: 3rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -656,14 +660,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-12 {
-  margin-left: 3rem;
 }
 
 .block {
@@ -786,10 +782,6 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[900px\] {
-  max-width: 900px;
 }
 
 .cursor-pointer {
@@ -934,20 +926,12 @@ video {
   background-image: url('./images/bg-box.jpeg');
 }
 
-.bg-bg-depoimento {
-  background-image: url('./images/bg-depoimento.jpg');
+.bg-ecosistema-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/box.webp');
 }
 
 .bg-175\% {
   background-size: 175%;
-}
-
-.bg-contain {
-  background-size: contain;
-}
-
-.bg-120\% {
-  background-size: 120%;
 }
 
 .bg-cover {
@@ -1057,6 +1041,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-2xl {
@@ -1359,11 +1347,6 @@ body {
     padding-inline-end: 1.5rem;
   }
 
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1480,24 +1463,12 @@ body {
     margin-bottom: 2rem;
   }
 
-  .lg\:me-0 {
-    margin-inline-end: 0px;
+  .lg\:ml-0 {
+    margin-left: 0px;
   }
 
   .lg\:mt-0 {
     margin-top: 0px;
-  }
-
-  .lg\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .lg\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
-  .lg\:ml-0 {
-    margin-left: 0px;
   }
 
   .lg\:flex {
@@ -1538,10 +1509,6 @@ body {
 
   .lg\:bg-services-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg-services.jpeg');
-  }
-
-  .lg\:bg-bg-depoimento {
-    background-image: url('./images/bg-depoimento.jpg');
   }
 
   .lg\:bg-cover {

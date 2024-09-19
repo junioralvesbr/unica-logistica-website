@@ -37,6 +37,7 @@ module.exports = {
       },
       backgroundImage: {
         'services-image': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg-services.jpeg')",
+        'ecosistema-image': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/box.webp')",
         'bg-depoimento': "url('./images/bg-depoimento.jpg')",
       },
       backgroundSize: {
