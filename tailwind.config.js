@@ -32,11 +32,17 @@ module.exports = {
         third: "#ffde14",
         fourth: "#ffcd1c",
         fifth: 'rgba(239,45,137,0.03)',
-        sixth: 'rgba(18,17,16,0.6)'
+        sixth: 'rgba(18,17,16,0.6)',
+        seventh: '#a3807e',
       },
       backgroundImage: {
         'services-image': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg-services.jpeg')",
       },
+      backgroundSize: {
+        '150%': '150%',
+        '175%': '175%',
+        '200%': '200%',
+      }
     },
   },
   plugins: [FlipCard],
