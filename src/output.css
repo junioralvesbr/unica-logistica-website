@@ -574,6 +574,11 @@ video {
   position: relative;
 }
 
+.-mx-6 {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -599,6 +604,10 @@ video {
   margin-right: auto;
 }
 
+.mt-0\.5 {
+  margin-top: 0.125rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -609,6 +618,10 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -629,6 +642,16 @@ video {
 
 .hidden {
   display: none;
+}
+
+.size-14 {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.size-5 {
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
 .h-10 {
@@ -695,6 +718,14 @@ video {
   max-width: 16rem;
 }
 
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.max-w-\[1340px\] {
+  max-width: 1340px;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -715,6 +746,10 @@ video {
   max-width: 36rem;
 }
 
+.max-w-\[900px\] {
+  max-width: 900px;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -727,6 +762,10 @@ video {
   flex-wrap: wrap;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -737,6 +776,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-0\.5 {
+  gap: 0.125rem;
 }
 
 .gap-10 {
@@ -812,6 +855,11 @@ video {
   border-color: rgb(239 45 137 / var(--tw-border-opacity));
 }
 
+.border-rose-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(225 29 72 / var(--tw-border-opacity));
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -819,6 +867,11 @@ video {
 
 .bg-fifth {
   background-color: rgba(239,45,137,0.03);
+}
+
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
 .bg-seventh {
@@ -839,12 +892,20 @@ video {
   background-image: url('./images/bg-box.jpeg');
 }
 
+.bg-bg-depoimento {
+  background-image: url('./images/bg-depoimento.jpg');
+}
+
 .bg-175\% {
   background-size: 175%;
 }
 
-.bg-200\% {
-  background-size: 200%;
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-120\% {
+  background-size: 120%;
 }
 
 .bg-clip-text {
@@ -860,6 +921,11 @@ video {
   background-repeat: no-repeat;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -870,6 +936,10 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
 }
 
 .px-10 {
@@ -897,6 +967,11 @@ video {
   padding-bottom: 2.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -922,16 +997,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pr-10 {
   padding-right: 2.5rem;
 }
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -1002,6 +1077,11 @@ video {
   color: rgb(239 45 137 / var(--tw-text-opacity));
 }
 
+.text-rose-600 {
+  --tw-text-opacity: 1;
+  color: rgb(225 29 72 / var(--tw-text-opacity));
+}
+
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(108 61 112 / var(--tw-text-opacity));
@@ -1023,6 +1103,20 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition-all {
@@ -1139,6 +1233,16 @@ body {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-rose-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(225 29 72 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1176,8 +1280,16 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .sm\:block {
     display: block;
+  }
+
+  .sm\:flex {
+    display: flex;
   }
 
   .sm\:max-w-md {
@@ -1186,6 +1298,24 @@ body {
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:p-8 {
+    padding: 2rem;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:pe-6 {
+    padding-inline-end: 1.5rem;
+  }
+
+  .sm\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 
@@ -1274,6 +1404,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .lg\:col-span-5 {
     grid-column: span 5 / span 5;
   }
@@ -1282,8 +1416,17 @@ body {
     grid-column: span 7 / span 7;
   }
 
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .lg\:mb-8 {
     margin-bottom: 2rem;
+  }
+
+  .lg\:me-0 {
+    margin-inline-end: 0px;
   }
 
   .lg\:mt-0 {
@@ -1348,12 +1491,24 @@ body {
     padding-bottom: 4rem;
   }
 
+  .lg\:pe-0 {
+    padding-inline-end: 0px;
+  }
+
+  .lg\:pe-8 {
+    padding-inline-end: 2rem;
+  }
+
   .lg\:pl-20 {
     padding-left: 5rem;
   }
 
   .lg\:pl-36 {
     padding-left: 9rem;
+  }
+
+  .lg\:ps-8 {
+    padding-inline-start: 2rem;
   }
 
   .lg\:text-start {
@@ -1381,14 +1536,6 @@ body {
 }
 
 @media (min-width: 1280px) {
-  .xl\:min-h-screen {
-    min-height: 100vh;
-  }
-
-  .xl\:min-h-\[800px\] {
-    min-height: 800px;
-  }
-
   .xl\:min-h-\[700px\] {
     min-height: 700px;
   }
@@ -1401,12 +1548,13 @@ body {
     gap: 2.5rem;
   }
 
-  .xl\:bg-cover {
-    background-size: cover;
-  }
-
   .xl\:bg-contain {
     background-size: contain;
+  }
+
+  .xl\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .xl\:text-5xl {
@@ -1417,6 +1565,11 @@ body {
   .xl\:leading-relaxed {
     line-height: 1.625;
   }
+}
+
+.rtl\:rotate-180:where([dir="rtl"], [dir="rtl"] *) {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]) {

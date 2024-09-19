@@ -27,18 +27,20 @@ module.exports = {
         'roboto': ['"Roboto"', 'sans-serif']
       },
       colors: {
-        primary: "#ef2d89",
-        secondary: "#6c3d70",
-        third: "#ffde14",
-        fourth: "#ffcd1c",
+        primary: '#ef2d89',
+        secondary: '#6c3d70',
+        third: '#ffde14',
+        fourth: '#ffcd1c',
         fifth: 'rgba(239,45,137,0.03)',
         sixth: 'rgba(18,17,16,0.6)',
         seventh: '#a3807e',
       },
       backgroundImage: {
         'services-image': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg-services.jpeg')",
+        'bg-depoimento': "url('./images/bg-depoimento.jpg')",
       },
       backgroundSize: {
+        '120%': '120%',
         '150%': '150%',
         '175%': '175%',
         '200%': '200%',
