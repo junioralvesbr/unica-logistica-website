@@ -908,6 +908,10 @@ video {
   background-size: 120%;
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
@@ -1317,6 +1321,11 @@ body {
     font-size: 3rem;
     line-height: 1;
   }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1364,6 +1373,10 @@ body {
 
   .md\:bg-transparent {
     background-color: transparent;
+  }
+
+  .md\:bg-bg-depoimento {
+    background-image: url('./images/bg-depoimento.jpg');
   }
 
   .md\:p-0 {
@@ -1433,6 +1446,14 @@ body {
     margin-top: 0px;
   }
 
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .lg\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -1467,6 +1488,10 @@ body {
 
   .lg\:bg-services-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg-services.jpeg');
+  }
+
+  .lg\:bg-bg-depoimento {
+    background-image: url('./images/bg-depoimento.jpg');
   }
 
   .lg\:bg-cover {
