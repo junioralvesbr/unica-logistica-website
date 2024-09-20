@@ -38,10 +38,10 @@ Toda vez que for dar deploy no site é necessário buildar um arquivo de ccs ger
 
 #### Para utilizar o tailwind em desenvolvimento:
 ```node
-  npx tailwindcss -i './src/global.css' -o './src/styles.css --watch
+  npx tailwindcss -i './src/global.css' -o './src/styles.css' --watch
 ```
 
 #### Para gerar a build final do tailwind no styles.css utilize:
 ```node
-  npx tailwindcss -i './src/global.css' -o './src/styles.css --minify
+  npx tailwindcss -i './src/global.css' -o './src/styles.css' --minify
 ```
