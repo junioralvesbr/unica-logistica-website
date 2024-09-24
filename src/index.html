@@ -636,30 +636,69 @@
     <!-- ESG -->
 
     <!-- Footer -->
-    <footer class="bg-primary rounded-lg shadow dark:bg-primary m-4">
-      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-            <img src="./images/logo.png" class="h-24" alt="Flowbite Logo" />
-          </a>
-          <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0 dark:text-white">
+    <footer class="bg-primary shadow dark:bg-primary py-16">
+      <div class="grid items-center gap-6 max-w-screen-xl mx-auto lg:grid-cols-3">
+        <div class="flex flex-col h-32">
+          <ul>
             <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Inicio</a>
+              <a href="#"
+                class="text-white text-xl flex items-center justify-center gap-2 lg:justify-start hover:text-third">
+                <ion-icon name="mail-outline" class="text-2xl"></ion-icon>
+                <span>atendimento@unica.com.br</span>
+              </a>
             </li>
             <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Quem somos</a>
+              <a href="#"
+                class="text-white text-xl flex items-center justify-center gap-2 mt-2 lg:justify-start hover:text-third">
+                <ion-icon name="call-outline"></ion-icon>
+                <span>(41) 99640-5958</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="border-t border-third mt-4 pt-2 lg:content-end">
+            <p class="text-white text-base text-center lg:text-start">© 2024Unica. Todos os direitos reservados</p>
+          </div>
+        </div>
+
+        <div>
+          <img src="./images/Logo-amarelo.png" alt="logo amarelo da Unica" class="w-56 h-64 mx-auto">
+        </div>
+
+        <div>
+          <ul class="flex gap-4 justify-center lg:justify-end">
+            <li>
+              <a href="#">
+                <ion-icon name="logo-facebook" class="text-3xl text-white hover:text-third"></ion-icon>
+              </a>
             </li>
             <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Trabalhe com Agente</a>
+              <a href="#">
+                <ion-icon name="logo-instagram" class="text-3xl text-white hover:text-third"></ion-icon>
+              </a>
             </li>
             <li>
-              <a href="#" class="hover:underline">Portal do Cliente</a>
+              <a href="#">
+                <ion-icon name="logo-whatsapp" class="text-3xl text-white hover:text-third"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon name="logo-linkedin" class="text-3xl text-white hover:text-third"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="flex gap-8 justify-end border-t border-third mt-4 pt-2 lg:content-end ">
+            <li class="text-center lg:text-end">
+              <a href="#" class="text-white hover:text-third">Politicas de privacidade</a>
+            </li>
+
+            <li class="text-center lg:text-end">
+              <a href="#" class="text-white hover:text-third">Termos e condições</a>
             </li>
           </ul>
         </div>
-        <hr class="my-6 border-white-200 sm:mx-auto dark:border-white-700 lg:my-8" />
-        <span class="block text-sm text-white sm:text-center dark:text-white">©<a href="https://unicaentrega.com/"
-            class="hover:underline">Única Logística Delicada</a>. Todos os direitos reservados.</span>
       </div>
     </footer>
 
@@ -670,6 +709,10 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
   <script type="module">
     import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
 
