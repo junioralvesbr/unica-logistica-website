@@ -36,9 +36,10 @@ module.exports = {
         seventh: '#a3807e',
       },
       backgroundImage: {
-        'services-image': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg-services.jpeg')",
-        'ecosistema-image': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/box.webp')",
-        'bg-depoimento': "url('./images/bg-depoimento.jpg')",
+        'background-1': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg-services.jpeg')",
+        'background-2': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/box.webp')",
+        'background-3': "url('./images/bg-depoimento.jpg')",
+        // 'background-4': "url('./images/rocket.jpg')",
       },
       backgroundSize: {
         '120%': '120%',

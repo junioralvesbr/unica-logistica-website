@@ -675,12 +675,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -733,36 +733,12 @@ video {
   height: 20rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-3\/6 {
-  height: 50%;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[800px\] {
-  height: 800px;
-}
-
-.h-\[650px\] {
-  height: 650px;
-}
-
-.h-\[550px\] {
-  height: 550px;
-}
-
 .h-\[700px\] {
   height: 700px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .max-h-40 {
@@ -773,24 +749,12 @@ video {
   min-height: 24rem;
 }
 
-.min-h-\[550px\] {
-  min-height: 550px;
-}
-
-.min-h-36 {
-  min-height: 9rem;
-}
-
-.min-h-80 {
-  min-height: 20rem;
-}
-
 .min-h-\[352px\] {
   min-height: 352px;
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.min-h-\[550px\] {
+  min-height: 550px;
 }
 
 .w-10 {
@@ -855,10 +819,6 @@ video {
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[900px\] {
-  max-width: 900px;
 }
 
 .cursor-pointer {
@@ -972,11 +932,6 @@ video {
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
-.border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
-}
-
 .border-primary {
   --tw-border-opacity: 1;
   border-color: rgb(239 45 137 / var(--tw-border-opacity));
@@ -1024,7 +979,7 @@ video {
   background-image: url('./images/bg-box.jpeg');
 }
 
-.bg-ecosistema-image {
+.bg-background-2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/box.webp');
 }
 
@@ -1118,11 +1073,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .pb-10 {
@@ -1610,7 +1560,7 @@ body {
     background-color: transparent;
   }
 
-  .md\:bg-bg-depoimento {
+  .md\:bg-background-3 {
     background-image: url('./images/bg-depoimento.jpg');
   }
 
@@ -1735,7 +1685,7 @@ body {
     gap: 2rem;
   }
 
-  .lg\:bg-services-image {
+  .lg\:bg-background-1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg-services.jpeg');
   }
 
@@ -1759,16 +1709,6 @@ body {
   .lg\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-
-  .lg\:py-60 {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
-  }
-
-  .lg\:py-36 {
-    padding-top: 9rem;
-    padding-bottom: 9rem;
   }
 
   .lg\:py-24 {
@@ -1918,11 +1858,6 @@ body {
   .dark\:focus\:ring-gray-600:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
-  }
-
-  .dark\:focus\:ring-gray-800:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(31 41 55 / var(--tw-ring-opacity));
   }
 }
 
