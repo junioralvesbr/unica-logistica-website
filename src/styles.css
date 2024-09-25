@@ -712,6 +712,14 @@ video {
   height: 5rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
+.h-28 {
+  height: 7rem;
+}
+
 .h-32 {
   height: 8rem;
 }
@@ -734,14 +742,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-28 {
-  height: 7rem;
 }
 
 .max-h-40 {
@@ -782,10 +782,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.min-w-\[230px\] {
-  min-width: 230px;
 }
 
 .max-w-2xl {
@@ -1023,6 +1019,10 @@ video {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./images/ecosistema.jpg');
 }
 
+.bg-background-gradient {
+  background-image: linear-gradient(135deg, #ef2d89 20%, #ffde14 100%);
+}
+
 .bg-175\% {
   background-size: 175%;
 }
@@ -1190,6 +1190,10 @@ video {
   font-weight: 500;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .leading-none {
   line-height: 1;
 }
@@ -1318,6 +1322,10 @@ body {
   --tw-gradient-to: rgb(239 45 137 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: #ffde14 var(--tw-gradient-to-position);
+}
+
+.unica-background-gradiente {
+  background-image: linear-gradient(135deg, #ef2d89 0%, #ffde14 100%);
 }
 
 .webkit-gradient-text {
@@ -1546,6 +1554,10 @@ body {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .sm\:leading-relaxed {
+    line-height: 1.625;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1678,12 +1690,12 @@ body {
     height: 500px;
   }
 
-  .lg\:min-h-\[600px\] {
-    min-height: 600px;
+  .lg\:h-\[600px\] {
+    height: 600px;
   }
 
-  .lg\:min-w-\[230px\] {
-    min-width: 230px;
+  .lg\:min-h-\[600px\] {
+    min-height: 600px;
   }
 
   .lg\:grid-cols-12 {
@@ -1704,6 +1716,10 @@ body {
 
   .lg\:content-end {
     align-content: flex-end;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
   .lg\:justify-start {
@@ -1775,6 +1791,10 @@ body {
 
   .lg\:ps-8 {
     padding-inline-start: 2rem;
+  }
+
+  .lg\:pt-10 {
+    padding-top: 2.5rem;
   }
 
   .lg\:text-start {

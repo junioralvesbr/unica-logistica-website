@@ -36,6 +36,7 @@ module.exports = {
         seventh: '#a3807e',
       },
       backgroundImage: {
+        'background-gradient': "linear-gradient(135deg, #ef2d89 20%, #ffde14 100%)",
         'background-1': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg-services.jpeg')",
         'background-2': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/box.webp')",
         'background-3': "url('./images/bg-depoimento.jpg')",
