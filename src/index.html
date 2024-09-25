@@ -89,6 +89,94 @@
   <!-- Header -->
 
   <main>
+    <!-- Slider dos Clientes -->
+    <section>
+      <ul id="my-keen-slider" class="keen-slider">
+        <li class="keen-slider__slide number-slide1">
+          <div class="h-20 flex items-center justify-center">
+            <img src="./images/clientes/festval.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide2">
+          <div class="h-20 flex items-center justify-center">
+            <img src="./images/clientes/baby.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide3">
+          <div class="h-28 flex items-center justify-center">
+            <img src="./images/clientes/bomVivante.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide4">
+          <div class="h-20 flex items-center justify-center">
+            <img src="./images/clientes/boticario.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide5">
+          <div class="h-20 flex items-center justify-center">
+            <img src="./images/clientes/eudora.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide6">
+          <div class="h-20 flex items-center justify-center">
+            <img src="./images/clientes/euroImport.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide7">
+          <div class="h-28 flex items-center justify-center">
+            <img src="./images/clientes/fubrman.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide8">
+          <div class="h-24 flex items-center justify-center">
+            <img src="./images/clientes/havaianas.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide9">
+          <div class="h-20 flex items-center justify-center">
+            <img src="./images/clientes/le.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide10">
+          <div class="h-28 flex items-center justify-center">
+            <img src="./images/clientes/nomad.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide11">
+          <div class="h-28 flex items-center justify-center">
+            <img src="./images/clientes/paoDaGabi.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide12">
+          <div class="h-28 flex items-center justify-center">
+            <img src="./images/clientes/requinte.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide13">
+          <div class="h-20 flex items-center justify-center">
+            <img src="./images/clientes/rosePetenucci.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide14">
+          <div class="h-20 flex items-center justify-center">
+            <img src="./images/clientes/silvia.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide15">
+          <div class="h-20 flex items-center justify-center">
+            <img src="./images/clientes/techGilrs.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+        <li class="keen-slider__slide number-slide16">
+          <div class="h-28 flex items-center justify-center">
+            <img src="./images/clientes/triangulo.png" alt="Logo dos clientes da Unica" class="w-full h-full">
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- Slider dos Clientes -->
+
+
     <!-- Nossos Serviços -->
     <section>
       <div class="pt-20 pb-10 lg:bg-background-1 lg:bg-service-image lg:bg-cover lg:bg-center lg:bg-no-repeat">
@@ -772,6 +860,45 @@
 
     keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
     keenSliderNext.addEventListener('click', () => keenSlider.next())
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+
+  <script>
+    var animation = { duration: 15000, easing: (t) => t }
+
+    var slider = new KeenSlider("#my-keen-slider", {
+      loop: true,
+      renderMode: "performance",
+      drag: false,
+      slides: {
+        perView: 2,
+        spacing: 2,
+      },
+      breakpoints: {
+        "(min-width: 768px)": {
+          slides: {
+            perView: 3,
+            spacing: 2,
+          },
+        },
+        "(min-width: 1024px)": {
+          slides: {
+            perView: 5,
+            spacing: 2,
+          },
+        },
+      },
+      created(s) {
+        s.moveToIdx(5, true, animation)
+      },
+      updated(s) {
+        s.moveToIdx(s.track.details.abs + 5, true, animation)
+      },
+      animationEnded(s) {
+        s.moveToIdx(s.track.details.abs + 5, true, animation)
+      },
+    })
   </script>
 
 
