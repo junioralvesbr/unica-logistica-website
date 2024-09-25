@@ -24,10 +24,6 @@ body {
   @apply bg-gradient-to-r from-primary to-third
 }
 
-.unica-background-gradiente {
-  background-image: linear-gradient(135deg, #ef2d89 0%, #ffde14 100%);
-}
-
 .webkit-gradient-text {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

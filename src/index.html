@@ -53,8 +53,9 @@
           <li
             class="group border-2 border-white rounded-full px-5 py-2 transition-all hover:border-secondary hover:bg-fourth">
             <a href="#"
-              class="block py-2 px-3 text-white transition-all hover:bg-gray-100 md:text-lg md:hover:bg-transparent  group-hover:text-secondary md:p-0 dark:text-white md:dark:hover:text-secondary dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent">Portal
-              do Cliente</a>
+              class="block py-2 px-3 text-white transition-all hover:bg-gray-100 md:text-lg md:hover:bg-transparent  group-hover:text-secondary md:p-0 dark:text-white md:dark:hover:text-secondary dark:hover:bg-secondary dark:hover:text-white md:dark:hover:bg-transparent">
+              Portal do Cliente
+            </a>
           </li>
         </ul>
       </div>
@@ -66,10 +67,10 @@
   <header class="bg-white dark:bg-white">
     <div class="max-w-screen-2xl flex flex-col items-center justify-center mx-auto md:flex-row lg:gap-10">
       <div class="max-w-screen-md p-2 lg:pl-36">
-        <h1
+        <h1 id="title"
           class="text-secondary max-w-xl text-2xl pr-10 font-bold tracking-tight leading-relaxed md:text-3xl md:leading-relaxed md:pr-0 xl:text-5xl xl:leading-relaxed">
-          Imagine seu cliente recebendo o seu produto de uma maneira única
         </h1>
+
         <p class="max-w-lg mb-6 font-light text-secondary mt-5 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
           style="line-height: 38px;">
           Somos especialistas em entregas delicadas, pois para nós, o jeito de entregar importa!
@@ -826,6 +827,70 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+  <!-- Carrocel das marcas -->
+  <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+
+  <script>
+    var animation = { duration: 15000, easing: (t) => t }
+
+    var slider = new KeenSlider("#my-keen-slider", {
+      loop: true,
+      renderMode: "performance",
+      drag: false,
+      slides: {
+        perView: 2,
+        spacing: 2,
+      },
+      breakpoints: {
+        "(min-width: 768px)": {
+          slides: {
+            perView: 3,
+            spacing: 2,
+          },
+        },
+        "(min-width: 1024px)": {
+          slides: {
+            perView: 5,
+            spacing: 2,
+          },
+        },
+      },
+      created(s) {
+        s.moveToIdx(5, true, animation)
+      },
+      updated(s) {
+        s.moveToIdx(s.track.details.abs + 5, true, animation)
+      },
+      animationEnded(s) {
+        s.moveToIdx(s.track.details.abs + 5, true, animation)
+      },
+    })
+  </script>
+
+  <!-- Efeito maquina de escrever no titulo -->
+  <script>
+    var content = 'Imagine seu cliente recebendo o seu produto de uma maneira única';
+    var title = document.getElementById('title');
+
+    var speed = 50;
+    var cont = 0;
+
+    function typeWriter() {
+      if (cont < content.length) {
+        title.textContent += content.charAt(cont);
+        cont++;
+        setTimeout(typeWriter, speed);
+      } else {
+        // title.textContent = '';
+        // cont = 0;
+        // typeWriter();
+      }
+    }
+
+    typeWriter();
+  </script>
+
+  <!-- Carrocel dos depoimentos -->
   <script type="module">
     import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
 
@@ -885,45 +950,6 @@
 
     keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
     keenSliderNext.addEventListener('click', () => keenSlider.next())
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
-
-  <script>
-    var animation = { duration: 15000, easing: (t) => t }
-
-    var slider = new KeenSlider("#my-keen-slider", {
-      loop: true,
-      renderMode: "performance",
-      drag: false,
-      slides: {
-        perView: 2,
-        spacing: 2,
-      },
-      breakpoints: {
-        "(min-width: 768px)": {
-          slides: {
-            perView: 3,
-            spacing: 2,
-          },
-        },
-        "(min-width: 1024px)": {
-          slides: {
-            perView: 5,
-            spacing: 2,
-          },
-        },
-      },
-      created(s) {
-        s.moveToIdx(5, true, animation)
-      },
-      updated(s) {
-        s.moveToIdx(s.track.details.abs + 5, true, animation)
-      },
-      animationEnded(s) {
-        s.moveToIdx(s.track.details.abs + 5, true, animation)
-      },
-    })
   </script>
 
 
