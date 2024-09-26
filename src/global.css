@@ -127,7 +127,7 @@ body {
 /* Slider Marcas */
 [class^="number-slide"],
 [class*=" number-slide"] {
-  background: white;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
