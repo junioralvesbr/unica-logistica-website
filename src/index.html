@@ -11,7 +11,6 @@
     href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet" />
 
-  <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" /> -->
   <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
 
@@ -827,6 +826,29 @@
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
+  <!-- Efeito maquina de escrever no titulo -->
+  <script>
+    var content = 'Imagine seu cliente recebendo o seu produto de uma maneira única...';
+    var title = document.getElementById('title');
+
+    var speed = 50;
+    var cont = 0;
+
+    function typeWriter() {
+      if (cont < content.length) {
+        title.textContent += content.charAt(cont);
+        cont++;
+        setTimeout(typeWriter, speed);
+      } else {
+        // title.textContent = '';
+        // cont = 0;
+        // typeWriter();
+      }
+    }
+
+    typeWriter();
+  </script>
+
   <!-- Carrocel das marcas -->
   <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
 
@@ -865,29 +887,6 @@
         s.moveToIdx(s.track.details.abs + 5, true, animation)
       },
     })
-  </script>
-
-  <!-- Efeito maquina de escrever no titulo -->
-  <script>
-    var content = 'Imagine seu cliente recebendo o seu produto de uma maneira única';
-    var title = document.getElementById('title');
-
-    var speed = 50;
-    var cont = 0;
-
-    function typeWriter() {
-      if (cont < content.length) {
-        title.textContent += content.charAt(cont);
-        cont++;
-        setTimeout(typeWriter, speed);
-      } else {
-        // title.textContent = '';
-        // cont = 0;
-        // typeWriter();
-      }
-    }
-
-    typeWriter();
   </script>
 
   <!-- Carrocel dos depoimentos -->
