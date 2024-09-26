@@ -1010,6 +1010,10 @@ video {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./images/ecosistema.jpg');
 }
 
+.bg-background-5 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/esg-background.jpg');
+}
+
 .bg-background-gradient {
   background-image: linear-gradient(135deg, #ef2d89 20%, #ffde14 100%);
 }
@@ -1027,24 +1031,9 @@ video {
   background-repeat: no-repeat;
 }
 
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-.object-scale-down {
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
 }
 
 .p-2 {
@@ -1696,10 +1685,6 @@ body {
     height: 600px;
   }
 
-  .lg\:w-\[38rem\] {
-    width: 38rem;
-  }
-
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -1765,6 +1750,11 @@ body {
     padding-right: 5rem;
   }
 
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -1773,11 +1763,6 @@ body {
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
-  }
-
-  .lg\:py-10 {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
   }
 
   .lg\:pe-0 {
@@ -1804,10 +1789,6 @@ body {
     padding-top: 2.5rem;
   }
 
-  .lg\:pe-10 {
-    padding-inline-end: 2.5rem;
-  }
-
   .lg\:text-start {
     text-align: start;
   }
@@ -1821,14 +1802,14 @@ body {
     line-height: 2.5rem;
   }
 
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:leading-relaxed {
@@ -1856,14 +1837,6 @@ body {
 
   .xl\:gap-0 {
     gap: 0px;
-  }
-
-  .xl\:gap-10 {
-    gap: 2.5rem;
-  }
-
-  .xl\:gap-12 {
-    gap: 3rem;
   }
 
   .xl\:gap-16 {
