@@ -1775,6 +1775,11 @@ body {
     padding-bottom: 6rem;
   }
 
+  .lg\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .lg\:pe-0 {
     padding-inline-end: 0px;
   }
@@ -1799,6 +1804,10 @@ body {
     padding-top: 2.5rem;
   }
 
+  .lg\:pe-10 {
+    padding-inline-end: 2.5rem;
+  }
+
   .lg\:text-start {
     text-align: start;
   }
@@ -1815,6 +1824,11 @@ body {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:leading-relaxed {
