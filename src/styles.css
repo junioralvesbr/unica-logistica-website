@@ -1568,6 +1568,10 @@ body {
     max-width: 24rem;
   }
 
+  .md\:max-w-\[38rem\] {
+    max-width: 38rem;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1675,6 +1679,10 @@ body {
 
   .lg\:h-\[600px\] {
     height: 600px;
+  }
+
+  .lg\:w-\[38rem\] {
+    width: 38rem;
   }
 
   .lg\:grid-cols-12 {
@@ -1823,6 +1831,14 @@ body {
 
   .xl\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .xl\:gap-12 {
+    gap: 3rem;
+  }
+
+  .xl\:gap-16 {
+    gap: 4rem;
   }
 
   .xl\:py-24 {
