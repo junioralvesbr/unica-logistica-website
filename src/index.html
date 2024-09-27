@@ -21,13 +21,13 @@
 
 <body>
   <!-- NavBar -->
-  <nav class="unica-gradiente dark:bg-gray-900">
+  <nav class="unica-gradiente dark:bg-white">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
       <a href="https://unicaentrega.com.br/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <img src="./images/logo.png" class="w-32 h-20" alt="Unica Logistica delicada Logo" />
       </a>
       <button data-collapse-toggle="navbar-default" type="button"
-        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         aria-controls="navbar-default" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -64,10 +64,10 @@
 
   <!-- Header -->
   <header class="bg-white dark:bg-white">
-    <div class="max-w-screen-2xl flex flex-col items-center justify-center mx-auto md:flex-row lg:gap-10">
-      <div class="max-w-screen-md p-2 lg:pl-36">
+    <div class="max-w-screen-2xl flex flex-col items-center justify-center mx-auto md:flex-row lg:gap-10 xl:py-10">
+      <div class="max-w-screen-md p-2 lg:pl-16">
         <h1 id="title"
-          class="text-secondary h-36 max-w-xl text-2xl pr-10 font-bold tracking-tight leading-relaxed md:text-3xl md:leading-relaxed md:pr-0 md:h-52 md:w-[320px] xl:h-[312px] xl:w-[576px] xl:text-5xl xl:leading-relaxed">
+          class="text-secondary h-36 max-w-xl text-2xl pr-10 font-bold tracking-tight leading-relaxed md:text-3xl md:leading-relaxed md:pr-0 md:h-52 md:w-[320px] xl:h-48 xl:w-[476px] xl:text-4xl xl:leading-relaxed">
         </h1>
 
         <p class="max-w-lg mb-6 font-light text-secondary mt-5 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
@@ -81,7 +81,7 @@
       </div>
 
       <picture>
-        <img src="./images/hero.png" alt="mockup" class="w-full max-w-3xl">
+        <img src="./images/hero.png" alt="mockup" class="w-full max-w-4xl">
       </picture>
     </div>
     </div>
@@ -90,7 +90,7 @@
 
   <main>
     <!-- Slider dos Clientes -->
-    <section class="bg-background-gradient">
+    <section class="bg-gray-100">
       <ul id="my-keen-slider" class="keen-slider">
         <li class="keen-slider__slide number-slide1">
           <div class="h-20 flex items-center justify-center">
@@ -180,9 +180,9 @@
     <!-- Nossos Serviços -->
     <section>
       <div class="pt-20 pb-10 lg:bg-background-1 lg:bg-service-image lg:bg-cover lg:bg-center lg:bg-no-repeat">
-        <div class="flex flex-col justify-center items-center lg:flex-row xl:gap-16">
+        <div class="flex flex-col justify-center items-center xl:flex-row xl:gap-16">
           <h2
-            class="text-secondary text-2xl max-w-64 text-center text-balance font-bold tracking-tight leading-relaxed md:text-3xl md:leading-relaxed md:max-w-[38rem] md:pr-0 lg:text-start lg:text-4xl lg:leading-relaxed lg:text-white xl:text-5xl xl:leading-relaxed">
+            class="text-secondary text-2xl max-w-64 text-center text-balance font-bold tracking-tight leading-relaxed md:text-3xl md:leading-relaxed md:max-w-[38rem] md:pr-0 lg:text-white xl:text-start xl:text-5xl xl:leading-relaxed">
             Uma solução para cada modelo de entrega que o seu produto exige
           </h2>
 
@@ -306,7 +306,7 @@
     <!-- Nossos Serviços -->
 
     <!-- Metodologia de entrega -->
-    <section class="px-5 py-10 flex flex-col items-center gap-10 lg:flex-row lg:justify-center lg:px-20 lg:py-16">
+    <section class="px-5 py-10 flex flex-col items-center gap-10 lg:flex-row lg:justify-center lg:px-20 lg:py-32">
       <div class="flex justify-center items-center">
         <h2
           class="text-secondary text-2xl text-center text-balance font-bold tracking-tight leading-relaxed md:text-3xl md:leading-relaxed md:max-w-96 md:pr-0 lg:text-4xl lg:leading-relaxed lg:text-start xl:text-5xl xl:leading-relaxed">
@@ -359,7 +359,7 @@
     <!-- Especialista Unica -->
     <section class="bg-fifth">
       <article class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div class="mr-auto place-self-center lg:col-span-7">
+        <div class="mr-auto place-self-center lg:col-span-5">
           <h2 class="max-w-2xl mb-4 text-4xl font-bold tracking-tight leading-normal md:text-4xl dark:text-white">
             <span class="text-primary">Seja uma Especialista Única</span>
           </h2>
@@ -379,9 +379,8 @@
             </svg>
           </a>
         </div>
-        <div class="mt-10 lg:mt-0 rounded-lg lg:col-span-5 lg:flex lg:h-[500px]">
-          <img src=" ./images/especialista.jpg" alt="especialis unica logistica"
-            class="w-full h-full rounded-lg object-cover" />
+        <div class="mt-10 lg:mt-0 rounded-lg lg:flex lg:col-span-7">
+          <img src=" ./images/especialista.jpg" alt="especialis unica logistica" class="w-full h-full rounded-lg" />
         </div>
       </article>
 
@@ -718,39 +717,41 @@
         <div class="flex flex-col h-32">
           <ul>
             <li>
-              <a href="#"
+              <a href="mailto:atendimento@unica.com.br"
                 class="text-white text-xl flex items-center justify-center gap-2 lg:justify-start hover:text-third">
                 <ion-icon name="mail-outline" class="text-2xl"></ion-icon>
                 <span>atendimento@unica.com.br</span>
               </a>
             </li>
             <li>
-              <a href="#"
+              <a href="tel:41987203391"
                 class="text-white text-xl flex items-center justify-center gap-2 mt-2 lg:justify-start hover:text-third">
                 <ion-icon name="call-outline"></ion-icon>
-                <span>(41) 99640-5958</span>
+                <span>(41) 98720-3391</span>
               </a>
             </li>
           </ul>
 
           <div class="border-t border-third mt-4 pt-2 lg:content-end">
-            <p class="text-white text-base text-center lg:text-start">© 2024Unica. Todos os direitos reservados</p>
+            <p class="text-white text-base text-center lg:text-start">
+              © 2024Unica. Todos os direitos reservados
+            </p>
           </div>
         </div>
 
         <div>
-          <img src="./images/Logo-amarelo.png" alt="logo amarelo da Unica" class="w-56 h-64 mx-auto">
+          <img src="./images/Logo-amarelo.png" alt="logo amarelo da Unica" class="h-48 mx-auto">
         </div>
 
         <div>
           <ul class="flex gap-4 justify-center lg:justify-end">
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/unicaentrega" target="_blank">
                 <ion-icon name="logo-facebook" class="text-3xl text-white hover:text-third"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/unicaentrega/" target="_blank">
                 <ion-icon name="logo-instagram" class="text-3xl text-white hover:text-third"></ion-icon>
               </a>
             </li>
@@ -760,7 +761,7 @@
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.linkedin.com/company/unicaentrega/?originalSubdomain=br" target="_blank">
                 <ion-icon name="logo-linkedin" class="text-3xl text-white hover:text-third"></ion-icon>
               </a>
             </li>
@@ -778,8 +779,6 @@
         </div>
       </div>
     </footer>
-
-
     <!-- Footer -->
 
   </main>
