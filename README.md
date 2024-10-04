@@ -1,7 +1,7 @@
 ## 📋 Descrição: 
- Projeto de freelance para empresa motho express [mothoexpress.com.br/](https://www.mothoexpress.com.br/).</br>
- A Motho Express é uma startup que precisava de presença na internet para poder buscar investidores.</br>
- O site trouxe credibilidade a empresa perante os investidores e tambem novos clientes.
+ Projeto de freelance para empresa Unica Entregas Delicadas [https://unicaentrega.com.br/](https://unicaentrega.com.br/).</br>
+ A Unica entregas é uma startup que precisava de presença na internet para poder buscar investidores.</br>
+ O site trouxe credibilidade e visibilidade a empresa o que fez ela ser uma empresa atrativa aos clientes, investidores e prestadores de serviço.
 
 ## 🔧 Tecnologias Utilizada:
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -13,7 +13,7 @@
 ## 📄 Aprendizado:
 Esse site foi todo construido em HTML puro com tailwind.</br>
 Isso foi necessário por causa da hospedagem do cliente que não suportava tecnologias como react.</br>
-Toda vez que for dar deploy no site é necessário buildar um arquivo de ccs gerado pelo tailwind.</br>
+Toda vez que for fazer o deploy, é necessário construir um arquivo de ccs gerado pelo tailwind.</br>
 
 #
 ## Contato:
