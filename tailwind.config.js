@@ -37,11 +37,11 @@ module.exports = {
       },
       backgroundImage: {
         'background-gradient': "linear-gradient(135deg, #ef2d89 20%, #ffde14 100%)",
-        'background-1': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg-services.jpeg')",
+        'background-1': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/bg-services.webp')",
         'background-2': "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/box.webp')",
-        'background-3': "url('./images/bg-depoimento.jpg')",
+        'background-3': "url('./images/bg-depoimento.webp')",
         'background-4': "linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./images/ecosistema.jpg')",
-        'background-5': "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/esg-background.jpg')",
+        'background-5': "linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/esg-background.webp')",
       },
       backgroundSize: {
         '120%': '120%',
