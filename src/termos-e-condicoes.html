@@ -67,7 +67,7 @@
   <!-- NavBar -->
 
   <main class="max-w-screen-md mx-auto flex flex-col gap-4 py-10">
-    <h1 class="text-3xl font-bold text-slate-700 px-2 py-10">
+    <h1 class="text-3xl font-bold text-slate-700 px-2 py-10 md:text-5xl lg:text-6xl">
       Termos e Condições
     </h1>
 
@@ -376,8 +376,70 @@
   </footer>
   <!-- Footer -->
 
+  <!-- Banner de politica de privacidade -->
+  <section id="privacy-banner"
+    class="hidden fixed bottom-0 right-0 w-full p-5 text-base text-center text-white z-50 bg-primary">
+    Usamos cookies em nosso site para oferecer a você a experiência mais relevante, lembrando suas preferências e
+    visitas repetidas. <br />
+    Ao clicar em “Aceitar tudo”, você concorda com o uso de TODOS os cookies.
+    <a href="./politica-de-privacidade.html" class="text-white underline hover:text-third">
+      Política de Privacidade
+    </a>.
+    <button onclick="acceptPrivacyPolicy()"
+      class="bg-fourth text-gray-700 font-bold rounded-md px-7 py-2 cursor-pointer">
+      Aceitar
+    </button>
+  </section>
+
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Banner dos termos de politicas e privacidades -->
+  <script>
+    // Função para criar um cookie
+    function setCookie(cname, cvalue, exdays) {
+      const d = new Date();
+      d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+      let expires = "expires=" + d.toUTCString();
+      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+    // Função para obter o valor de um cookie
+    function getCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) === ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) === 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+
+    // Função para verificar se o consentimento já foi dado
+    function checkPrivacyConsent() {
+      let consent = getCookie("privacyConsent");
+      if (consent !== "accepted") {
+        document.getElementById("privacy-banner").style.display = "block";
+      }
+    }
+
+    // Função para aceitar a política de privacidade e esconder o banner
+    function acceptPrivacyPolicy() {
+      setCookie("privacyConsent", "accepted", 30);
+      document.getElementById("privacy-banner").style.display = "none";
+    }
+
+    // Verifica o consentimento ao carregar a página
+    window.onload = function () {
+      checkPrivacyConsent();
+    };
+  </script>
 </body>
 
 </html>
